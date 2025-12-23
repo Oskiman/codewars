@@ -6,6 +6,8 @@
 //Input: 145263 Output: 654321
 //Input: 123456789 Output: 987654321
 
+//NOTE: This fails one test on codewars which I may attempt to fix, or not!
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
