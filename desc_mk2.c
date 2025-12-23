@@ -6,8 +6,6 @@
 //Input: 145263 Output: 654321
 //Input: 123456789 Output: 987654321
 
-//NOTE: This fails one test on codewars which I may attempt to fix, or not!
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -57,8 +55,7 @@ uint64_t descendingOrder(uint64_t n)
 		count++;
 	}while (n/=10);
 
-
-  return bubble_sort_rev(arr_ptr, length);
+  	return bubble_sort_rev(arr_ptr, length);
 }
 
 // 'reverse' bubble sort from high to low
@@ -86,6 +83,7 @@ uint64_t bubble_sort_rev(uint64_t array[], int array_length)
     		sorted_int = 10 * sorted_int + array[i];
 	}
 
+	free(array);
 	return sorted_int;
 }
 
